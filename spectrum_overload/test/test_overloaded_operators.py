@@ -492,10 +492,10 @@ def test_spectra_stay_the_same_after_operations():
     # c and d still the same
     assert a == c
     assert b == d
-    assert e != c and e != d
-    assert f != c and f != d
-    assert g != c and g != d
-    assert h != c and h != d
+    assert e not in [c, d]
+    assert f not in [c, d]
+    assert g not in [c, d]
+    assert h not in [c, d]
 
 
 @pytest.mark.parametrize("calib", [True, False])
@@ -519,10 +519,10 @@ def test_copy_preseves_calib_and_header_also(phoenix_spectrum, calib):
     # c and d still the same
     assert a == c
     assert b == d
-    assert e != c and e != d
-    assert f != c and f != d
-    assert g != c and g != d
-    assert h != c and h != d
+    assert e not in [c, d]
+    assert f not in [c, d]
+    assert g not in [c, d]
+    assert h not in [c, d]
 
 
 def test_spectra_not_the_same_when_reassigned():

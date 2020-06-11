@@ -306,7 +306,6 @@ class Spectrum(object):
         """
         if rv == 0:
             """Do nothing."""
-            pass
         elif abs(rv) < 1e-7:
             """RV smaller then 0.1 mm/s"""
             logging.warning(
@@ -837,7 +836,7 @@ class Spectrum(object):
         )
 
     def __neq__(self, other: object) -> bool:
-        return not self == other
+        return self != other
 
     def xmin(self):
         return self.xaxis[0]

@@ -31,5 +31,4 @@ def phoenix_spectrum():
 def ones_spectrum():
     x = np.linspace(2000, 2200, 1000)
     y = np.ones_like(x)
-    spec = Spectrum(xaxis=x, flux=y)
-    return spec
+    return Spectrum(xaxis=x, flux=y)
