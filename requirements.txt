@@ -1,6 +1,6 @@
-astropy==4.0
-Cython==0.29.14
-matplotlib==3.1.2
-numpy==1.18.1
-pyastronomy==0.13.0
-scipy==1.4.1
+astropy==4.2.1
+Cython==0.29.23
+matplotlib==3.4.1
+numpy==1.20.2
+pyastronomy==0.16.0
+scipy==1.6.3
